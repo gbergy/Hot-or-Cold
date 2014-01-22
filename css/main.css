@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ----- Global ----- */
+*::-webkit-input-placeholder {
+    font-size: 25px;
+}    
+*:-moz-placeholder {
+    /* FF 4-18 */
+    font-size: 25px;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    font-size: 25px;
+}    
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 25px;
+}    
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  color: #6B615F; 
+  background-image: url(../images/plaid.jpg), url("../images/hotplaid.png"), url("../images/coldplaid.png"); /*is this right??*/ add image tags 
+  background-position: left top;
+  background-repeat: both;
+  padding: 5%;
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: #CBFFC8; 
+  padding: 0 0 10px 0;
+  text-shadow: 2px 2px 2px #000; 
+  margin-bottom: 10px;
+}
+
+input:placeholder {
+    font-size: 25px;
+} 
+
+/* ----- Body ----- */
+
+.wrapper {
+  width: 500px;
+  margin: auto;
+}
+
+#rule {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  width: 407px;
+  height: 90px;
+  background-color: pink;
+  border-radius: 10px;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 2px #000;
+}
+
+input {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 45px;
+  height: 100px;
+  width: 300px;
+  padding-bottom: 10px;
+ 
+}
+
+input:focus{
+  outline: 2px solid blue;
+
+}
+
+button {
+  margin-bottom: 20px;  
+  height: 45px;
+  width: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  background: 
+    rgb(245,246,246); /* Old browsers */ 
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+
+button:focus {
+  outline: 0;
+}
+
+#result {
+    margin: auto;
+    font-size: 25px;
+    height: 30px;
+    width: 265px;
+    background-color: navajowhite;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+#counter {
+    margin: auto;
+    font-size: 25px;
+    height: 30px;
+    width: 50px;
+    background-color: navajowhite;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.hot-background {
+  background-image: url("../images/hotplaid.png");
+  background-position: left top;
+  background-repeat: both;
+}
+
+.cold-background {
+  background-image: url("../images/coldplaid.png");
+  background-position: left top;
+  background-repeat: both;
+}
+
+
