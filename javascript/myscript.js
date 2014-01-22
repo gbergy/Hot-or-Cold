@@ -62,9 +62,8 @@ $(document).ready(function(){
   };
 
  //Game Reset  
-  reset.on('click', function(){ 
-    counter.empty();
-
+  reset.on('click', function() { 
+    location.reload();
   }); 
 
 });
